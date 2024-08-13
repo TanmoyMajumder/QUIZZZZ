@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TANMOY QUIZ APP</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style-switcher.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Start Pre-loader -->
+    <div class="pre-loader">
+        <div class="logo">
+            <a href="https://github.com/TanmoyMajumder">QUIZ<span>LET</span></a>
+        </div>
+        <div class="loader"></div>
+    </div>
+    <!-- End Pre-loader -->
+
+    <!-- Start Game Wrapper -->
+    <div class="game-wrapper">
+
+        <!-- Start Header -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="https://github.com/TanmoyMajumder">QUIZ<span>LET</span></a>
+                </div>
+            </div>
+        </Header>
+        <!-- End Header -->
+
+        <!-- Start Title Section -->
+        <section class="title-box">
+            <div class="container">
+                <div class="section-title">
+                    <span>QUIZLET</span>
+                </div>
+            </div>
+        </section>
+        <!-- End Title Section -->
+
+        <!-- Start Category of Quiz -->
+        <section class="categories-box ">
+            <div class="container">
+                <div class="grid">
+                    <div class="category">
+                        <div class="quiz-header">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <div class="quiz-body">
+                            <span>HTML</span>
+                            <p>20 questions from the basics of HTML</p>
+                        </div>
+                        <div class="quiz-footer">
+                            <button class="btn" data-category="html">Start Quiz</button>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="quiz-header">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <div class="quiz-body">
+                            <span>CSS</span>
+                            <p>20 questions from the basics of CSS</p>
+                        </div>
+                        <div class="quiz-footer">
+                            <button class="btn" data-category="css">Start Quiz</button>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="quiz-header">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <div class="quiz-body">
+                            <span>JavaScript</span>
+                            <p>20 questions from the basics of JavaScript</p>
+                        </div>
+                        <div class="quiz-footer">
+                            <button class="btn" data-category="javascript">Start Quiz</button>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="quiz-header">
+                            <i class="fa-brands fa-php"></i>
+                        </div>
+                        <div class="quiz-body">
+                            <span>PHP</span>
+                            <p>20 questions from the basics of PHP</p>
+                        </div>
+                        <div class="quiz-footer">
+                            <button class="btn" data-category="php">Start Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Category of Quiz -->
+
+        <!-- Start Info Box -->
+        <section class="info-box">
+            <div class="conatiner">
+                <div class="information">
+                    <div class="info-header">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Some Rules Of this Quiz</span>
+                    </div>
+                    <div class="info-body">
+                        <div class="info">
+                            <i class="fa-solid fa-stopwatch"></i>
+                            <div>You will have only <span>15 seconds</span> per each question.</div>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-hand"></i>
+                            <div>you can't select any option once time goes off.</div>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-hand-pointer"></i>
+                            <div>You can't exit from the Quiz while you're playing</div>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-computer-mouse"></i>
+                            <div>If you don't choose any answer before <span>15 seconds</span> , an answer will be chosen automatically</div>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-square-poll-vertical"></i>
+                            <div>you'il get points on the basisof your correct answers</div>
+                        </div>
+                    </div>
+                    <div class="info-footer">
+                        <button class="exit btn">Exit Quiz</button>
+                        <button class="start btn">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Info Box -->
+
+        <!-- Start Quiz -->
+        <section class="quiz-box">
+            <div class="container">
+                <div class="g-quiz">
+                    <header>
+                        <div class="quiz-category">
+                            <div>category: <span></span></div>
+                        </div>
+                        <div class="timer">
+                            <div class="time-text">Time Left</div>
+                            <div class="time-sec">15</div>
+                        </div>
+                        <div class="time-line"></div>
+                    </header>
+                    <section>
+                        <div class="question">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                            <span></span>
+                        </div>
+                        <div class="option-list"></div>
+                    </section>
+                    <footer>
+                        <div class="submit-button">
+                            <button class="next-btn btn">
+                                Next Que
+                            </button>
+                        </div>
+                        <div class="spans">
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </section>
+        <!-- End Quiz -->
+
+
+
+        <!-- Start Result Box -->
+        <section class="result-box ">
+            <div class="container">
+                <div class="quiz-result">
+                    <h3><span></span> Quiz result</h3>
+                    <div class="prog-accuracy">
+                        <div class="circular-progress">
+                            <span class="prog-value"></span>
+                        </div>
+                        <div class="qCount">Score: <span></span> of <span></span></div>
+                    </div>
+                    <div class="advice">
+                        <div class="advice-img">
+                            <img src="./imgs/ad3.png" />
+                        </div>
+                        <div class="advice-text">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="buttons-container">
+                        <button class="try-again btn">Try Again</button>
+                        <!-- <button class="try-again btn">Back To Quizzes</button> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Result Box -->
+
+    </div>
+    <!-- End Game Wrapper -->
+
+
+    <!-- Style switcher Start -->
+    <div class="style-switcher js-style-switcher" id="particles-js">
+        <button type="button" class="style-switcher-toggler js-style-switcher-toggler">
+            <i class="fa-solid fa-gear"></i>
+        </button>
+        <div class="style-switcher-main">
+            <h2>Style switcher</h2>
+            <div class="style-switcher-item">
+                <p>Theme color</p>
+                <div class="theme-color">
+                    <input type="range" min="0" max="360" class="hue-slider js-hue-slider" />
+                    <div class="hue">Hue: <span class="js-hue"></span></div>
+                </div>
+            </div>
+            <div class="style-switcher-item">
+                <label class="form-switcher">
+                    <span>Dark Mode</span>
+                    <input type="checkbox" class="js-dark-mode" />
+                    <div class="box"></div>
+                </label>
+            </div>
+            <div class="style-switcher-item">
+                <p>Theme background</p>
+                <div class="themes">
+                    <img data-item="codder" class="selected" src="./imgs/codder.png" alt="codder" />
+                    <img data-item="robot" src="./imgs/robot.png" alt="robot" />
+                    <img data-item="kingfish" src="./imgs/kingfish.png" alt="kingfish" />
+                    <img data-item="early-birds" src="./imgs/bird.png" alt="bird" />
+                    <img data-item="squirrel" src="./imgs/squirrel.png" alt="squirrel" />
+                    <img data-item="taxi" src="./imgs/taxi.png" alt="taxi" />
+                    <img data-item="eddie" src="./imgs/eddie.png" alt="eddie" />
+                    <img data-item="bees" src="./imgs/bees.png" alt="bees" />
+                    <img data-item="penguin-land" src="./imgs/penguin.png" alt="penguin" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Style switcher End -->
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
